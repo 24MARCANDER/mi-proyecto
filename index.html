@@ -1,27 +1,90 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <title>Mi experiencia en INTECAP</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; text-align: center; padding: 20px; margin: 0; }
-        nav { background: #2c3e50; padding: 15px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
-        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        nav a:hover { color: #3498db; }
-        
-        /* Estilo del contador como texto limpio */
-        .contador { width: 80%; margin: 0 auto 15px auto; text-align: right; color: #555; font-weight: bold; font-size: 0.9em; }
-        .contador a { color: #3498db; text-decoration: none; }
-        
-        .info-academica { background: #3498db; color: white; padding: 15px; border-radius: 8px; width: 80%; margin: 0 auto 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
-        .contenido { background: white; margin: 20px auto; padding: 30px; width: 80%; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); }
-        img { width: 100%; max-width: 400px; margin-top: 20px; border: 5px solid #bdc3c7; border-radius: 8px; }
-        footer { margin-top: 40px; color: #666; font-size: 0.9em; }
-    </style>
+
+```
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    nav {
+        background: #2c3e50;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    nav a {
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #3498db;
+    }
+
+    .contador {
+        width: 80%;
+        margin: 0 auto 15px auto;
+        text-align: right;
+        color: #555;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+
+    .info-academica {
+        background: #3498db;
+        color: white;
+        padding: 15px;
+        border-radius: 8px;
+        width: 80%;
+        margin: 0 auto 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .contenido {
+        background: white;
+        margin: 20px auto;
+        padding: 30px;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+        border: 5px solid #bdc3c7;
+        border-radius: 8px;
+    }
+
+    footer {
+        margin-top: 40px;
+        color: #666;
+        font-size: 0.9em;
+    }
+</style>
+```
+
 </head>
+
 <body>
 
+```
 <div class="contador">
-    Visitas: <a href="https://www.webfreecounter.com/" target="_blank">Ver estadísticas</a>
+    Visitas: <span id="visitas">Cargando...</span>
 </div>
 
 <nav>
@@ -30,19 +93,46 @@
 </nav>
 
 <div class="info-academica">
-    <p><strong>Estudiante:</strong> Ricardo Marc Anderson Sanic Mejía | <strong>Carnet:</strong> 2990-26-4915 | <strong>Carrera:</strong> Ingeniería en Sistemas de Información y Ciencias de la Computación | <strong>Institución:</strong> Universidad Mariano Gálvez de Guatemala</p>
+    <p>
+        <strong>Estudiante:</strong> Ricardo Marc Anderson Sanic Mejía |
+        <strong>Carnet:</strong> 2990-26-4915 |
+        <strong>Carrera:</strong> Ingeniería en Sistemas de Información y Ciencias de la Computación |
+        <strong>Institución:</strong> Universidad Mariano Gálvez de Guatemala
+    </p>
 </div>
 
 <div class="contenido">
     <h1>Mi experiencia en INTECAP</h1>
+
     <h2>Proyecto Final</h2>
+
     <p><strong>Carrera:</strong> Ingeniería en Sistemas de Información y Ciencias de la Computación</p>
+
     <hr>
-    <p>Este sitio web recopila mi trayectoria técnica y los aprendizajes obtenidos durante mi formación en la carrera de Electrónica Industrial en INTECAP. Aquí unas pocas imágenes de mi experiencia.</p>
+
+    <p>
+        Este sitio web recopila mi trayectoria técnica y los aprendizajes obtenidos durante mi formación en la carrera de Electrónica Industrial en INTECAP, donde he desarrollado habilidades prácticas en electrónica y sistemas industriales.
+    </p>
+
     <img src="foto4.jpeg" alt="Foto 4">
 </div>
 
-<footer>© 2026 Ricardo Marc Anderson Sanic Mejía</footer>
+<footer>
+    © 2026 Ricardo Marc Anderson Sanic Mejía
+</footer>
+
+<script>
+    fetch('https://api.countapi.xyz/hit/marcenintecap.com/inicio')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('visitas').textContent = data.value;
+        })
+        .catch(error => {
+            console.error(error);
+            document.getElementById('visitas').textContent = 'Error';
+        });
+</script>
+```
 
 </body>
 </html>
