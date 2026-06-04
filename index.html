@@ -1,224 +1,249 @@
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>Mi experiencia en INTECAP</title>
 
-<style>
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        background-color: #f4f4f4;
-        text-align: center;
-        padding: 20px;
-        margin: 0;
-    }
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
 
-    nav {
-        background: #2c3e50;
-        padding: 15px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
+        nav {
+            background: #2c3e50;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
 
-    nav a {
-        color: white;
-        margin: 0 20px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.3s;
-    }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    nav a:hover {
-        color: #3498db;
-    }
+        nav a:hover {
+            color: #3498db;
+        }
 
-    .contador {
-        width: 80%;
-        margin: 0 auto 15px auto;
-        text-align: right;
-        color: #555;
-        font-weight: bold;
-        font-size: 0.9em;
-    }
+        .contador {
+            width: 80%;
+            margin: 0 auto 15px auto;
+            text-align: right;
+            color: #555;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
 
-    .info-academica {
-        background: #3498db;
-        color: white;
-        padding: 15px;
-        border-radius: 8px;
-        width: 80%;
-        margin: 0 auto 20px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
+        .info-academica {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 80%;
+            margin: 0 auto 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
 
-    .contenido {
-        background: white;
-        margin: 20px auto;
-        padding: 30px;
-        width: 80%;
-        border-radius: 10px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-    }
+        .contenido {
+            background: white;
+            margin: 20px auto;
+            padding: 30px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+        }
 
-    .subtitulo {
-        font-size: 1.2em;
-        color: #555;
-        margin-bottom: 20px;
-    }
+        .subtitulo {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
 
-    .galeria-portada {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin-top: 30px;
-    }
+        .galeria-portada {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
 
-    .galeria-portada img {
-        width: 220px;
-        height: 220px;
-        object-fit: cover;
-        border: 5px solid #bdc3c7;
-        border-radius: 12px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-        transition: transform 0.3s;
-    }
+        .galeria-portada img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border: 5px solid #bdc3c7;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
 
-    .galeria-portada img:hover {
-        transform: scale(1.05);
-    }
+        .galeria-portada img:hover {
+            transform: scale(1.05);
+        }
 
-    .arriba {
-        margin-top: 0;
-    }
+        .arriba {
+            margin-top: 0;
+        }
 
-    .abajo {
-        margin-top: 60px;
-    }
+        .abajo {
+            margin-top: 60px;
+        }
 
-    .habilidades {
-        margin-top: 40px;
-    }
+        .habilidades {
+            margin-top: 40px;
+        }
 
-    .lista-habilidades {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 20px;
-    }
+        .lista-habilidades {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-    .habilidad {
-        background: #3498db;
-        color: white;
-        padding: 12px 18px;
-        border-radius: 8px;
-        font-weight: bold;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
+        .habilidad {
+            background: #3498db;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
 
-    footer {
-        margin-top: 40px;
-        color: #666;
-        font-size: 0.9em;
-    }
-</style>
+        footer {
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+        }
 
+        @media (max-width: 1000px) {
+            .galeria-portada img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contenido,
+            .info-academica {
+                width: 95%;
+            }
+
+            .galeria-portada {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .arriba,
+            .abajo {
+                margin-top: 0;
+            }
+
+            .galeria-portada img {
+                width: 280px;
+                height: 280px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="contador">
-    Visitas: <span id="visitas">0</span>
-</div>
-
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="proyectos.html">Mis Proyectos</a>
-</nav>
-
-<div class="info-academica">
-    <p>
-        <strong>Estudiante:</strong> Ricardo Marc Anderson Sanic Mejía |
-        <strong>Carnet:</strong> 2990-26-4915 |
-        <strong>Carrera:</strong> Ingeniería en Sistemas de Información y Ciencias de la Computación |
-        <strong>Institución:</strong> Universidad Mariano Gálvez de Guatemala
-    </p>
-</div>
-
-<div class="contenido">
-
-    <h1>Mi Experiencia en INTECAP</h1>
-
-    <p class="subtitulo">
-        Electrónica Industrial • Automatización • PLC • Microcontroladores
-    </p>
-
-    <hr>
-
-    <p>
-        Este sitio web recopila mi trayectoria técnica y los aprendizajes obtenidos durante mi formación en la carrera de Electrónica Industrial en INTECAP. A lo largo de esta experiencia desarrollé habilidades en electrónica analógica, electrónica digital, programación de microcontroladores, programación de PLC, neumática, hidráulica, automatización industrial y sistemas eléctricos.
-    </p>
-
-    <div class="galeria-portada">
-
-        <img src="foto4.jpeg" alt="Foto 4" class="arriba">
-
-        <img src="foto5.jpeg" alt="Foto 5" class="abajo">
-
-        <img src="foto6.jpeg" alt="Foto 6" class="arriba">
-
-        <img src="foto7.jpeg" alt="Foto 7" class="abajo">
-
+    <div class="contador">
+        Visitas: <span id="visitas">0</span>
     </div>
 
-    <div class="habilidades">
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="proyectos.html">Mis Proyectos</a>
+    </nav>
 
-        <h2>Habilidades Adquiridas</h2>
+    <div class="info-academica">
+        <p>
+            <strong>Estudiante:</strong> Ricardo Marc Anderson Sanic Mejía |
+            <strong>Carnet:</strong> 2990-26-4915 |
+            <strong>Carrera:</strong> Ingeniería en Sistemas de Información y Ciencias de la Computación |
+            <strong>Institución:</strong> Universidad Mariano Gálvez de Guatemala
+        </p>
+    </div>
 
-        <div class="lista-habilidades">
+    <div class="contenido">
 
-            <div class="habilidad">⚡ Electrónica Industrial</div>
+        <h1>Mi Experiencia en INTECAP</h1>
 
-            <div class="habilidad">🔌 Electrónica Digital</div>
+        <p class="subtitulo">
+            Electrónica Industrial • Automatización • PLC • Microcontroladores
+        </p>
 
-            <div class="habilidad">📟 Electrónica Analógica</div>
+        <hr>
 
-            <div class="habilidad">💻 Microcontroladores</div>
+        <p>
+            Este sitio web recopila mi trayectoria técnica y los aprendizajes obtenidos durante mi formación en la carrera de Electrónica Industrial en INTECAP. A lo largo de esta experiencia desarrollé habilidades en electrónica analógica, electrónica digital, programación de microcontroladores, programación de PLC, neumática, hidráulica, automatización industrial y sistemas eléctricos.
+        </p>
 
-            <div class="habilidad">🤖 Programación PLC</div>
+        <div class="galeria-portada">
 
-            <div class="habilidad">⚙️ Automatización Industrial</div>
+            <img src="foto4.jpeg" alt="Foto 4" class="arriba">
 
-            <div class="habilidad">🔧 Neumática</div>
+            <img src="foto5.jpeg" alt="Foto 5" class="abajo">
 
-            <div class="habilidad">🔩 Hidráulica</div>
+            <img src="foto6.jpeg" alt="Foto 6" class="arriba">
+
+            <img src="foto7.jpeg" alt="Foto 7" class="abajo">
+
+        </div>
+
+        <div class="habilidades">
+
+            <h2>Habilidades Adquiridas</h2>
+
+            <div class="lista-habilidades">
+
+                <div class="habilidad">⚡ Electrónica Industrial</div>
+
+                <div class="habilidad">🔌 Electrónica Digital</div>
+
+                <div class="habilidad">📟 Electrónica Analógica</div>
+
+                <div class="habilidad">💻 Microcontroladores</div>
+
+                <div class="habilidad">🤖 Programación PLC</div>
+
+                <div class="habilidad">⚙️ Automatización Industrial</div>
+
+                <div class="habilidad">🔧 Neumática</div>
+
+                <div class="habilidad">🔩 Hidráulica</div>
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
+    <footer>
+        © 2026 Ricardo Marc Anderson Sanic Mejía
+    </footer>
 
-<footer>
-    © 2026 Ricardo Marc Anderson Sanic Mejía
-</footer>
+    <script>
+        let visitas = localStorage.getItem("contador_visitas") || 0;
 
-<script>
-    let visitas = localStorage.getItem("contador_visitas");
+        if (!document.referrer.includes("proyectos.html")) {
+            visitas = parseInt(visitas) + 1;
+            localStorage.setItem("contador_visitas", visitas);
+        }
 
-    if (visitas === null) {
-        visitas = 1;
-    } else {
-        visitas = parseInt(visitas) + 1;
-    }
-
-    localStorage.setItem("contador_visitas", visitas);
-
-    document.getElementById("visitas").textContent = visitas;
-</script>
+        document.getElementById("visitas").textContent =
+            localStorage.getItem("contador_visitas");
+    </script>
 
 </body>
 </html>
